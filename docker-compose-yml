@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  habridge:
+    image: mkshb/habridge:5.3.0
+    restart: always
+    volumes:
+      - ./settings:/app/settings
+      - ./clips:/app/static/clips
+      - ./cache:/app/cache
+      - ./presets:/app/presets
+    network_mode: "host"
+    ports:
+      - 81:81
+    volumes:
+      - ./data:/opt/echobridge/data
