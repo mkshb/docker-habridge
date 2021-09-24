@@ -3,7 +3,7 @@ FROM openjdk:8-alpine
 RUN mkdir -p /opt/echobridge 
 WORKDIR /opt/echobridge
 RUN apk --no-cache add curl
-RUN curl -L https://github.com/bwssytems/ha-bridge/releases/download/v5.3.0/ha-bridge-5.3.0.jar --output ha-bridge.jar
+RUN curl -L https://github.com/bwssytems/ha-bridge/releases/download/v5.4.1RC1/ha-bridge-5.4.1RC1.jar --output ha-bridge.jar
 
 EXPOSE 81
 
