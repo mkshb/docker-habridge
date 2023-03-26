@@ -13,5 +13,3 @@ services:
     network_mode: "host"
     ports:
       - 81:81
-    volumes:
-      - ./data:/opt/echobridge/data
